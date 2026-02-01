@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const fadeInUp = {
@@ -114,7 +114,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mb-4 text-xl text-zinc-400 md:text-2xl"
           >
-            Full-Stack Developer & UI/UX Enthusiast
+            AI Product Manager & UI/UX Enthusiast
           </motion.p>
 
           {/* Description */}
@@ -123,8 +123,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="mx-auto mb-12 max-w-2xl text-base text-zinc-500 md:text-lg"
           >
-            I craft elegant digital experiences with clean code and thoughtful design.
-            Passionate about building products that make a difference.
+            I work on scaled consumer facing products, optimising for funnel conversion and retention metrics. I also build AI powered products as side projects, trying to solve one user problem at a time.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -161,10 +160,9 @@ export default function Home() {
             className="flex items-center justify-center gap-6"
           >
             {[
-              { icon: Github, href: "https://github.com", label: "GitHub" },
-              { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-              { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-              { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
+              { icon: Github, href: "https://github.com/khareishaan38", label: "GitHub" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/ishaan-khare/", label: "LinkedIn" },
+              { icon: Mail, href: "mailto:khareishaan97@gmail.com", label: "Email" },
             ].map(({ icon: Icon, href, label }) => (
               <motion.a
                 key={label}

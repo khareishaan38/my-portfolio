@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ChatWidget } from "@/components/chat-widget";
+import { ScrollIndicator } from "@/components/scroll-indicator";
+import { PageScrollProvider } from "@/components/page-scroll-provider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -23,8 +25,11 @@ export default function RootLayout({
       <body
         className={`${inter.variable} font-sans antialiased`}
       >
-        {children}
-        <ChatWidget />
+        <PageScrollProvider>
+          {children}
+          <ScrollIndicator />
+          <ChatWidget />
+        </PageScrollProvider>
       </body>
     </html>
   );
